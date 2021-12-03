@@ -60,8 +60,6 @@ const withDefaultOpts = opt => ({
 });
 
 (async () => {
-  console.log(">>>>>>> package.json in:", path.join(process.cwd(), "package.json"));
-
   const {
     yanc = {}
   } = require(path.resolve(path.join(process.cwd(), "package.json")));

@@ -63,7 +63,6 @@ const withDefaultOpts = (opt) => ({
 // run the plugin command
 (async () => {
   // yanc options from user's package.json
-  console.log(">>>>>>> package.json in:", path.join(process.cwd(), "package.json"));
   const { yanc = {} } = require(path.resolve(path.join(process.cwd(), "package.json")));
   // call plugin
   const res = await command(withDefaultOpts(yanc), args);
