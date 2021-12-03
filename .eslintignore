@@ -1,0 +1,17 @@
+# .eslintignore
+
+# artifacts directories
+build/
+coverage/
+dist/
+
+# temp directories
+cache/
+.cache/
+tmp/
+
+# nodejs files
+package-lock.json
+node_modules/
+.yarn/
+

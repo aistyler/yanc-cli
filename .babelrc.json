@@ -1,0 +1,58 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "node": "current"
+        }
+      }
+    ],
+    [
+      "@babel/preset-typescript",
+      {
+        "isTSX": true,
+        "allExtensions": true,
+        "allowDeclareFields": true,
+        "onlyRemoveTypeImports": true,
+        "optimizeConstEnums": true
+      }
+    ]
+  ],
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime"
+    ],
+    [
+      "babel-plugin-module-resolver",
+      {
+        "root": ".",
+        "alias": {
+          "~/src": "./src",
+          "~/lib": "./src/lib"
+        }
+      }
+    ],
+    [
+      "@babel/plugin-proposal-private-methods"
+    ],
+    [
+      "@babel/plugin-proposal-class-properties"
+    ],
+    [
+      "@babel/plugin-transform-typescript"
+    ]
+  ],
+  "env": {
+    "development": {
+      "presets": []
+    },
+    "production": {
+      "ignore": [
+        "**/*.spec.js",
+        "**/*.spec.ts"
+      ],
+      "comments": false
+    }
+  }
+}

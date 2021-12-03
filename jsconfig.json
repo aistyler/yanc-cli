@@ -1,0 +1,20 @@
+{
+  "extends": "./pathconfig.json",
+  "compilerOptions": {
+    /* Visit https://code.visualstudio.com/docs/languages/jsconfig to read more about this file */
+
+    /* Basic Options */
+    // "incremental": true,                         /* Enable incremental compilation */
+    "module": "commonjs",                         /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */
+    "target": "ES5",                              /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */
+    "checkJs": true,                              /* Report errors in .js files. */
+
+    /* Experimental Options */
+    "experimentalDecorators": true,               /* Enables experimental support for ES7 decorators. */
+
+    /* Module Resolution Options */
+    "moduleResolution": "node",                   /* Specify module resolution strategy: 'node' (Node.js) or 'classic' (TypeScript pre-1.6). */
+  },
+  "include": [ "src/**/*", "tests/**/*" ],
+  "exclude": [ "node_modules" ]
+}

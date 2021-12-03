@@ -1,0 +1,330 @@
+{
+  "root": true,
+  "ignorePatterns": [
+    "/build",
+    "/dist",
+    "/.cache",
+    "deprecated",
+    "/.yarn"
+  ],
+  "env": {
+    "browser": false,
+    "commonjs": true,
+    "node": true,
+    "jest": true,
+    "es6": true,
+    "es2021": true
+  },
+  "globals": {},
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prettier",
+    "import",
+    "json",
+    "jest"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:prettier/recommended",
+    "plugin:json/recommended",
+    "plugin:jest/recommended"
+  ],
+  "rules": {
+    "no-unused-vars": [
+      0
+    ],
+    "no-use-before-define": [
+      0
+    ],
+    "no-template-curly-in-string": [
+      0
+    ],
+    "no-underscore-dangle": [
+      0
+    ],
+    "no-multi-assign": [
+      0
+    ],
+    "no-plusplus": [
+      0
+    ],
+    "no-unused-expressions": [
+      2,
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "no-useless-escape": [
+      1
+    ],
+    "linebreak-style": [
+      2,
+      "unix"
+    ],
+    "max-len": [
+      1,
+      {
+        "code": 100,
+        "ignoreUrls": true,
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ],
+    "quotes": [
+      0,
+      "double",
+      {
+        "avoidEscape": true,
+        "allowTemplateLiterals": true
+      }
+    ],
+    "quote-props": [
+      1,
+      "consistent-as-needed"
+    ],
+    "prettier/prettier": [
+      1,
+      {
+        "endOfLine": "lf",
+        "semi": true,
+        "trailingComma": "es5",
+        "printWidth": 100,
+        "singleQuote": false,
+        "quoteProps": "preserve",
+        "tabWidth": 2,
+        "proseWrap": "preserve",
+        "arrowParens": "always",
+        "bracketSpacing": true
+      },
+      {
+        "usePrettierrc": false
+      }
+    ],
+    "arrow-body-style": "off",
+    "prefer-arrow-callback": "off",
+    "spaced-comment": [
+      0
+    ],
+    "import/prefer-default-export": [
+      0
+    ],
+    "import/order": [
+      0
+    ],
+    "import/extensions": [
+      2,
+      "ignorePackages",
+      {
+        "js": "never",
+        "jsx": "never",
+        "ts": "never",
+        "tsx": "never"
+      }
+    ],
+    "json/*": [
+      2,
+      "allowComments"
+    ],
+    "jest/no-done-callback": [
+      0
+    ],
+    "no-empty-pattern": [
+      0
+    ],
+    "no-empty": [
+      0
+    ],
+    "camelcase": [
+      0
+    ],
+    "jest/no-disabled-tests": [
+      0
+    ],
+    "jsx-a11y/anchor-is-valid": [
+      0
+    ]
+  },
+  "overrides": [
+    {
+      "files": [
+        "*.ts",
+        "*.tsx"
+      ],
+      "parser": "@typescript-eslint/parser",
+      "plugins": [
+        "prettier",
+        "import",
+        "json",
+        "jest",
+        "@typescript-eslint"
+      ],
+      "extends": [
+        "eslint:recommended",
+        "plugin:import/recommended",
+        "plugin:prettier/recommended",
+        "plugin:json/recommended",
+        "plugin:jest/recommended",
+        "plugin:import/typescript",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:@typescript-eslint/eslint-recommended"
+      ],
+      "rules": {
+        "@typescript-eslint/no-unused-vars": [
+          0
+        ],
+        "no-use-before-define": [
+          0
+        ],
+        "no-template-curly-in-string": [
+          0
+        ],
+        "no-underscore-dangle": [
+          0
+        ],
+        "no-multi-assign": [
+          0
+        ],
+        "no-plusplus": [
+          0
+        ],
+        "no-unused-expressions": [
+          2,
+          {
+            "allowShortCircuit": true
+          }
+        ],
+        "no-useless-escape": [
+          1
+        ],
+        "linebreak-style": [
+          2,
+          "unix"
+        ],
+        "max-len": [
+          1,
+          {
+            "code": 100,
+            "ignoreUrls": true,
+            "ignoreComments": true,
+            "ignoreTemplateLiterals": true
+          }
+        ],
+        "quotes": [
+          0,
+          "double",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "quote-props": [
+          1,
+          "consistent-as-needed"
+        ],
+        "prettier/prettier": [
+          1,
+          {
+            "endOfLine": "lf",
+            "semi": true,
+            "trailingComma": "es5",
+            "printWidth": 100,
+            "singleQuote": false,
+            "quoteProps": "preserve",
+            "tabWidth": 2,
+            "proseWrap": "preserve",
+            "arrowParens": "always",
+            "bracketSpacing": true
+          },
+          {
+            "usePrettierrc": false
+          }
+        ],
+        "arrow-body-style": "off",
+        "prefer-arrow-callback": "off",
+        "spaced-comment": [
+          0
+        ],
+        "import/prefer-default-export": [
+          0
+        ],
+        "import/order": [
+          0
+        ],
+        "import/extensions": [
+          2,
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+        ],
+        "json/*": [
+          2,
+          "allowComments"
+        ],
+        "jest/no-done-callback": [
+          1
+        ],
+        "@typescript-eslint/triple-slash-reference": [
+          0
+        ],
+        "@typescript-eslint/quotes": [
+          0,
+          "double",
+          {
+            "avoidEscape": true,
+            "allowTemplateLiterals": true
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+          0
+        ],
+        "@typescript-eslint/no-explicit-any": [
+          0
+        ],
+        "@typescript-eslint/no-var-requires": [
+          0
+        ],
+        "@typescript-eslint/no-use-before-define": [
+          0
+        ],
+        "@typescript-eslint/no-empty-function": [
+          0
+        ],
+        "@typescript-eslint/ban-ts-comment": [
+          1
+        ],
+        "@typescript-eslint/no-empty-interface": [
+          0
+        ],
+        "@typescript-eslint/ban-ts-ignore": [
+          0
+        ],
+        "@typescript-eslint/camelcase": [
+          0
+        ]
+      }
+    }
+  ],
+  "settings": {
+    "import/resolver": {
+      "babel-module": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx",
+          ".es",
+          ".es6",
+          ".mjs"
+        ]
+      }
+    }
+  }
+}
