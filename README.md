@@ -4,10 +4,10 @@
 
 ```sh
 # installation
-yarn add -D @yanc/cli@"github:aistyler/yanc-cli#refs/tags/v1.3.3"
+yarn add -D @yanc/cli@"github:aistyler/yanc-cli#refs/tags/v1.3.4"
 
 # or on yarn 2+
-yarn add -D @yanc/cli@"github:aistyler/yanc#workspace=@yanc/cli&sermver:^1.3.3"
+yarn add -D @yanc/cli@"github:aistyler/yanc#workspace=@yanc/cli&sermver:^1.3.4"
 ```
 
 ## configutation
