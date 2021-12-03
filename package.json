@@ -12,7 +12,7 @@
     "test": "yanc babel test .",
     "lint": "yanc babel lint .",
     "lint:fix": "yarn lint --fix",
-    "dist": "yanc babel build ./src --out-dir ./dist --env-name production",
+    "dist": "node ./src/cli.js babel build ./src --out-dir ./dist --env-name production",
     "dist:clean": "rm -rf ./dist",
     "start": "node ./bin/yanc.js",
     "conf": "yanc babel configure",
@@ -23,6 +23,7 @@
     "@yanc/env-babel": "*"
   },
   "yanc": {
-    "verbose": true
+    "verbose": true,
+    "browser": false
   }
 }
